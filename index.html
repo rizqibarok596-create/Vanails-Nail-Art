@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Nail Art - Waktunya Manjakan Diri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Palet Warna & Pengaturan Dasar */
+        :root {
+            --blush-pink: #F8C8D4;
+            --soft-cream: #FAF7F2;
+            --dark-gray: #4A4A4A;
+            --white: #FFFFFF;
+            --wa-green: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-gray);
+        }
+
+        body {
+            background-color: var(--soft-cream);
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        header {
+            background-color: var(--white);
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #d88fa1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--blush-pink);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        /* Layanan / Paket */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #d88fa1;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: left;
+            border-left: 5px solid var(--blush-pink);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Floating WhatsApp Button (Automasi Teks) */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--wa-green);
+            color: var(--white);
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Beauty Nail Art</div>
+    </header>
+
+    <section class="hero">
+        <h1>Waktunya Manjakan Diri</h1>
+        <p>Kuku cantik, mood langsung naik! Bukan sekadar pewarna kuku, tapi bentuk ekspresi dirimu hari ini.</p>
+        <a href="#services" class="btn-primary">Lihat Treatment Kami</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Pilihan Treatment</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Basic Glow</h3>
+                <p>Manicure dasar + Gel Polish satu warna. Cocok untuk si minimalis.</p>
+            </div>
+            <div class="card">
+                <h3>Artistry Express</h3>
+                <p>Gel Polish + Nail Art simpel di 2-4 jari. Tampil beda dengan gaya yang subtle.</p>
+            </div>
+            <div class="card">
+                <h3>All-Out Glam</h3>
+                <p>Nail Extensions + Custom 3D Art di seluruh jari. Siap jadi pusat perhatian!</p>
+            </div>
+            <div class="card">
+                <h3>Bestie Bundles</h3>
+                <p>Harga spesial untuk reservasi 2 orang sekaligus. Ajak bestie-mu sekarang!</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Beauty%20Nail%20Art,%20saya%20mau%20konsultasi%20desain%20dan%20booking%20jadwal%20treatment%20nih!" target="_blank" class="wa-float">
+        Konsultasi via WhatsApp
+    </a>
+
+    <footer>
+        &copy; 2026 Beauty Nail Art. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
