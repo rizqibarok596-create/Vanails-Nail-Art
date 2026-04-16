@@ -1,22 +1,22 @@
+Edit dengan apl Dokumen
+Membuat penyesuaian, memberi komentar, dan berbagi dengan yang lain agar dapat mengedit secara bersamaan.
+LAIN KALIGUNAKAN APLIKASI
+Vanails Nail Art Website
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Beauty Nail Art | Waktunya Manjakan Diri</title>
+   <title>Vanails Nail Art | Waktunya Manjakan Diri</title>
    
-   <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
    
-   <!-- FontAwesome untuk Icon -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    
-   <!-- Tailwind CSS untuk Layouting yang cepat dan responsif -->
    <script src="https://cdn.tailwindcss.com"></script>
    
-   <!-- Konfigurasi Tema Tailwind -->
    <script>
        tailwind.config = {
            theme: {
@@ -37,7 +37,7 @@
    </script>
 
    <style>
-       /* 1. TEKSTUR NOISE / GRAINY */
+       /* TEKSTUR NOISE / GRAINY */
        .noise-overlay {
            position: fixed;
            top: 0;
@@ -50,7 +50,7 @@
            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
        }
 
-       /* 2. MESH GRADIENT BACKGROUND */
+       /* MESH GRADIENT BACKGROUND */
        body {
            background-color: #FAF7F2;
            background-image:
@@ -65,7 +65,7 @@
            color: #4A4A4A;
        }
 
-       /* 3. GLASSMORPHISM CARDS */
+       /* GLASSMORPHISM CARDS */
        .glass-card {
            background: rgba(255, 255, 255, 0.35);
            backdrop-filter: blur(16px);
@@ -88,14 +88,12 @@
            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
        }
 
-       /* Teks Animasi Gradien */
        .text-gradient {
            background: linear-gradient(to right, #b76e79, #d88fa1);
            -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
        }
 
-       /* Tombol Animasi */
        .btn-hover {
            transition: all 0.3s ease;
        }
@@ -117,25 +115,21 @@
 </head>
 <body class="antialiased relative">
 
-   <!-- Efek Grainy di seluruh halaman -->
    <div class="noise-overlay"></div>
 
-   <!-- Navigasi -->
    <nav class="fixed w-full z-40 glass-nav transition-all duration-300">
        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-           <a href="#" class="font-serif text-2xl font-bold text-rose">Beauty Nail Art</a>
+           <a href="#" class="font-serif text-2xl font-bold text-rose">Vanails Nail Art</a>
            <div class="hidden md:flex space-x-8 text-sm font-medium">
                <a href="#services" class="hover:text-rose transition-colors">Paket & Treatment</a>
                <a href="#pricelist" class="hover:text-rose transition-colors">Pricelist</a>
            </div>
-           <!-- Pesan WA: Konsultasi Umum dari Navbar -->
-           <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%E2%9C%A8%20Aku%20lihat%20dari%20website%20Beauty%20Nail%20Art.%20Mau%20konsultasi%20dulu%20dong,%20kira-kira%20desain%20yang%20cocok%20buat%20kuku%20aku%20apa%20ya?" target="_blank" class="hidden md:block bg-dark text-white px-6 py-2 rounded-full text-sm font-medium btn-hover">
+           <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%E2%9C%A8%20Aku%20lihat%20dari%20website%20Vanails%20Nail%20Art.%20Mau%20konsultasi%20dulu%20dong,%20kira-kira%20desain%20yang%20cocok%20buat%20kuku%20aku%20apa%20ya?" target="_blank" class="hidden md:block bg-dark text-white px-6 py-2 rounded-full text-sm font-medium btn-hover">
                Konsultasi Gratis
            </a>
        </div>
    </nav>
 
-   <!-- Hero Section -->
    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden px-6">
        <div class="max-w-6xl mx-auto text-center relative z-10">
            <p class="text-rose font-medium tracking-widest uppercase mb-4 text-sm md:text-base">Waktunya Manjakan Diri</p>
@@ -143,7 +137,7 @@
                Kuku Cantik, <br> <span class="text-gradient">Mood Langsung Naik!</span>
            </h1>
            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-               Bukan sekadar pewarna kuku, tapi bentuk ekspresi dirimu hari ini. Temukan desain yang paling "kamu banget" di Beauty Nail Art.
+               Bukan sekadar pewarna kuku, tapi bentuk ekspresi dirimu hari ini. Temukan desain yang paling "kamu banget" di Vanails Nail Art.
            </p>
            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                <a href="#services" class="bg-rose text-white px-8 py-4 rounded-full font-medium text-lg btn-hover w-full sm:w-auto shadow-lg shadow-rose/30">
@@ -156,7 +150,6 @@
        </div>
    </section>
 
-   <!-- Paket & Treatment Section -->
    <section id="services" class="py-20 px-6 z-10 relative">
        <div class="max-w-6xl mx-auto">
            <div class="text-center mb-16">
@@ -166,7 +159,6 @@
 
            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                
-               <!-- Card 1: Basic Glow -->
                <div class="glass-card overflow-hidden group">
                    <div class="h-48 overflow-hidden relative">
                        <div class="absolute inset-0 bg-blush/20 group-hover:bg-transparent transition-colors z-10"></div>
@@ -181,13 +173,11 @@
                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Manicure dasar dipadukan dengan Gel Polish satu warna seperti merah bold di foto ini. Sangat cocok untuk kamu yang suka tampilan solid, bersih, dan memukau.</p>
                        <div class="border-t border-white/50 pt-4 flex justify-between items-center">
                            <span class="font-bold text-xl text-dark">85k</span>
-                           <!-- Pesan WA: Booking Basic Glow -->
-                           <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%E2%9D%A4%EF%B8%8F%20Aku%20tertarik%20banget%20sama%20paket%20*Basic%20Glow*%20yang%20simpel%20tapi%20elegan.%20Untuk%20jadwal%20terdekat%20kapan%20bisa%20ya?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
+                           <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%E2%9D%A4%EF%B8%8F%20Aku%20lihat%20dari%20website%20Vanails%20Nail%20Art.%20Tertarik%20banget%20sama%20paket%20*Basic%20Glow*.%20Untuk%20jadwal%20terdekat%20kapan%20bisa%20ya?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
                        </div>
                    </div>
                </div>
 
-               <!-- Card 2: Artistry Express -->
                <div class="glass-card overflow-hidden group">
                    <div class="h-48 overflow-hidden relative">
                        <div class="absolute inset-0 bg-blush/20 group-hover:bg-transparent transition-colors z-10"></div>
@@ -199,13 +189,11 @@
                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Gel Polish ditambah dengan Nail Art simpel di 2 hingga 4 jari (seperti marble, gradasi, atau krom). Pas untuk kamu yang ingin tampil beda tapi tetap subtle.</p>
                        <div class="border-t border-white/50 pt-4 flex justify-between items-center">
                            <span class="font-bold text-xl text-dark">150k</span>
-                           <!-- Pesan WA: Booking Artistry Express -->
-                           <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%F0%9F%8E%A8%20Mau%20book%20jadwal%20buat%20paket%20*Artistry%20Express*%20nih.%20Pengen%20kuku%20ada%20seninya%20dikit%20biar%20makin%20cute!%20Jadwal%20kosong%20kapan%20ya?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
+                           <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%F0%9F%8E%A8%20Mau%20book%20jadwal%20di%20Vanails%20Nail%20Art%20buat%20paket%20*Artistry%20Express*%20nih.%20Jadwal%20kosong%20kapan%20ya?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
                        </div>
                    </div>
                </div>
 
-               <!-- Card 3: All-Out Glam -->
                <div class="glass-card overflow-hidden group">
                    <div class="h-48 overflow-hidden relative">
                        <div class="absolute inset-0 bg-blush/20 group-hover:bg-transparent transition-colors z-10"></div>
@@ -220,111 +208,81 @@
                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Paket super lengkap! Nail Extensions ditambah Custom Art mewah seperti di foto (garis lengkung elegan & gold glitter). Siap tampil mempesona!</p>
                        <div class="border-t border-white/50 pt-4 flex justify-between items-center">
                            <span class="font-bold text-xl text-dark">350k</span>
-                           <!-- Pesan WA: Booking All-Out Glam -->
-                           <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%E2%9C%A8%F0%9F%92%85%20Aku%20mau%20tampil%20maksimal%20nih,%20mau%20booking%20paket%20*All-Out%20Glam*.%20Bisa%20cek%20ketersediaan%20jadwalnya%20nggak?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
+                           <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%E2%9C%A8%F0%9F%92%85%20Aku%20mau%20booking%20paket%20*All-Out%20Glam*%20di%20Vanails%20Nail%20Art.%20Bisa%20cek%20ketersediaan%20jadwalnya%20nggak?" class="text-rose font-medium text-sm hover:underline flex items-center gap-1">Booking <i class="fa-solid fa-arrow-right"></i></a>
                        </div>
                    </div>
                </div>
 
            </div>
            
-           <!-- Banner Bestie Bundle -->
            <div class="mt-12 glass-card p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-r from-white/40 to-blush/30">
                <div>
                    <h3 class="font-serif text-3xl font-bold text-dark mb-2">👯‍♀️ Bestie Bundles</h3>
-                   <p class="text-gray-600 max-w-lg">Makin seru kalau cantik bareng! Dapatkan potongan harga <strong>15% OFF</strong> untuk reservasi 2 orang di waktu yang bersamaan. Ajak sahabat, kakak, atau mamamu sekarang.</p>
+                   <p class="text-gray-600 max-w-lg">Makin seru kalau cantik bareng! Dapatkan potongan harga 15% OFF untuk reservasi 2 orang di waktu yang bersamaan.</p>
                </div>
-               <!-- Pesan WA: Promo Bestie -->
-               <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%F0%9F%91%AF%E2%80%8D%E2%99%80%EF%B8%8F%20Aku%20mau%20klaim%20promo%20*Bestie%20Bundles*%20buat%20berdua%20nih.%20Masih%20berlaku%20kan%20ya?%20Bisa%20pilih%20jadwal%20kapan?" class="bg-dark text-white px-8 py-4 rounded-full font-medium text-lg btn-hover whitespace-nowrap">
+               <a href="https://wa.me/6282248528745?text=Hai%20Kak!%20%F0%9F%91%AF%E2%80%8D%E2%99%80%EF%B8%8F%20Aku%20mau%20klaim%20promo%20*Bestie%20Bundles*%20di%20Vanails%20Nail%20Art.%20Masih%20berlaku%20kan%20ya?" class="bg-dark text-white px-8 py-4 rounded-full font-medium text-lg btn-hover whitespace-nowrap">
                    Klaim Promo Bestie
                </a>
            </div>
        </div>
    </section>
 
-   <!-- Pricelist Detail Section -->
    <section id="pricelist" class="py-20 px-6 relative z-10">
        <div class="max-w-4xl mx-auto glass-card p-8 md:p-12">
            <div class="text-center mb-10">
-               <h2 class="font-serif text-4xl font-bold text-dark mb-4">Official Pricelist</h2>
-               <p class="text-gray-500">Transparan tanpa biaya tersembunyi. Kualitas premium, harga bersahabat.</p>
+               <h2 class="font-serif text-4xl font-bold text-dark mb-4 text-gradient">Official Pricelist</h2>
+               <p class="text-gray-500">Transparan tanpa biaya tersembunyi di Vanails Nail Art.</p>
            </div>
            
            <div class="space-y-6">
-               <!-- Item -->
                <div class="flex items-center justify-between border-b border-white/50 pb-4">
                    <div>
-                       <h4 class="font-bold text-lg text-dark">Basic Glow (Mani + 1 Color)</h4>
-                       <p class="text-sm text-gray-500">Pengerjaan ~60 Menit</p>
+                       <h4 class="font-bold text-lg text-dark">Basic Glow</h4>
+                       <p class="text-sm text-gray-500">Mani + 1 Color Gel</p>
                    </div>
-                   <div class="font-serif text-xl font-bold text-rose">IDR 85.000</div>
+                   <div class="font-serif text-xl font-bold text-rose">IDR 85k</div>
                </div>
-               <!-- Item -->
                <div class="flex items-center justify-between border-b border-white/50 pb-4">
                    <div>
-                       <h4 class="font-bold text-lg text-dark">Artistry Express (Mani + Simple Art 4 Jari)</h4>
-                       <p class="text-sm text-gray-500">Pengerjaan ~90 Menit</p>
+                       <h4 class="font-bold text-lg text-dark">Artistry Express</h4>
+                       <p class="text-sm text-gray-500">Mani + Simple Art 4 Jari</p>
                    </div>
-                   <div class="font-serif text-xl font-bold text-rose">IDR 150.000</div>
+                   <div class="font-serif text-xl font-bold text-rose">IDR 150k</div>
                </div>
-               <!-- Item -->
                <div class="flex items-center justify-between border-b border-white/50 pb-4">
                    <div>
-                       <h4 class="font-bold text-lg text-dark">All-Out Glam (Extensions + 3D/Custom Art)</h4>
-                       <p class="text-sm text-gray-500">Pengerjaan ~120-150 Menit</p>
+                       <h4 class="font-bold text-lg text-dark">All-Out Glam</h4>
+                       <p class="text-sm text-gray-500">Extensions + Custom Art</p>
                    </div>
-                   <div class="font-serif text-xl font-bold text-rose">IDR 350.000</div>
-               </div>
-               <!-- Item -->
-               <div class="flex items-center justify-between border-b border-white/50 pb-4">
-                   <div>
-                       <h4 class="font-bold text-lg text-dark">Gel Removal (Hapus Gel)</h4>
-                       <p class="text-sm text-gray-500">Pelepasan aman tanpa merusak kuku asli</p>
-                   </div>
-                   <div class="font-serif text-xl font-bold text-rose">IDR 35.000</div>
-               </div>
-               <!-- Item -->
-               <div class="flex items-center justify-between">
-                   <div>
-                       <h4 class="font-bold text-lg text-dark">Relaxing Hand Spa</h4>
-                       <p class="text-sm text-gray-500">Scrub, Masker, dan Pijat tangan</p>
-                   </div>
-                   <div class="font-serif text-xl font-bold text-rose">IDR 120.000</div>
+                   <div class="font-serif text-xl font-bold text-rose">IDR 350k</div>
                </div>
            </div>
            
            <div class="mt-10 text-center">
-               <p class="text-sm text-gray-500 italic mb-4">*Harga art kustom (character/intricate drawing) dapat bervariasi. Kirimkan foto referensi desainmu ke WhatsApp untuk estimasi harga pastinya.</p>
-               <!-- Pesan WA: Tanya Harga Custom -->
-               <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%F0%9F%92%85%20Aku%20punya%20referensi%20foto%20Nail%20Art%20sendiri%20nih.%20Kira-kira%20kalau%20bikin%20kayak%20gini%20estimasi%20harganya%20berapa%20ya?" class="inline-block bg-white text-rose border-2 border-rose px-6 py-2 rounded-full font-medium hover:bg-rose hover:text-white transition-colors">
+               <a href="https://wa.me/6282248528745?text=Halo%20Vanails%20Nail%20Art!%20%F0%9F%92%85%20Aku%20punya%20referensi%20foto%20sendiri%20nih.%20Kira-kira%20kalau%20bikin%20kayak%20gini%20estimasi%20harganya%20berapa%20ya?" class="inline-block bg-white text-rose border-2 border-rose px-6 py-2 rounded-full font-medium hover:bg-rose hover:text-white transition-colors">
                    Tanya Harga Custom Art
                </a>
            </div>
        </div>
    </section>
 
-   <!-- Footer -->
    <footer class="py-10 text-center relative z-10 border-t border-white/40 mt-10">
-       <h2 class="font-serif text-2xl font-bold text-dark mb-4">Beauty Nail Art</h2>
+       <h2 class="font-serif text-2xl font-bold text-dark mb-4">Vanails Nail Art</h2>
        <div class="flex justify-center gap-6 mb-6">
            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-rose hover:text-dark hover:scale-110 transition-all"><i class="fa-brands fa-instagram text-xl"></i></a>
            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-rose hover:text-dark hover:scale-110 transition-all"><i class="fa-brands fa-tiktok text-xl"></i></a>
-           <!-- Pesan WA: Dari Footer -->
-           <a href="https://wa.me/6282248528745?text=Halo%20Beauty%20Nail%20Art!%20%E2%9C%A8%20Boleh%20minta%20info%20pricelist%20lengkap%20dan%20lokasi%20studionya?" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-rose hover:text-dark hover:scale-110 transition-all"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+           <a href="https://wa.me/6282248528745?text=Halo%20Vanails%20Nail%20Art!%20%E2%9C%A8%20Boleh%20minta%20info%20pricelist%20lengkap%20dan%20lokasi%20studionya?" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-rose hover:text-dark hover:scale-110 transition-all"><i class="fa-brands fa-whatsapp text-xl"></i></a>
        </div>
-       <p class="text-sm text-gray-500">© 2026 Beauty Nail Art. All Rights Reserved. <br> Dirancang dengan 💖 untuk dirimu yang berharga.</p>
+       <p class="text-sm text-gray-500">© 2026 Vanails Nail Art. All Rights Reserved.</p>
    </footer>
 
-   <!-- Floating WhatsApp Button -->
-   <!-- Pesan WA: Dari Floating Button (Umum/Booking Jadwal) -->
-   <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%F0%9F%92%95%20Lagi%20pengen%20me-time%20nih,%20mau%20amankan%20jadwal%20buat%20Nail%20Art.%20Hari%20ini%20atau%20besok%20ada%20slot%20kosong%20nggak?"
+   <a href="https://wa.me/6282248528745?text=Halo%20Kak!%20%F0%9F%92%95%20Mau%20me-time%20di%20Vanails%20Nail%20Art%20nih.%20Hari%20ini%20atau%20besok%20ada%20slot%20kosong%20nggak?"
       target="_blank"
       class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg flex items-center gap-3 wa-float z-50 text-sm font-medium">
        <i class="fa-brands fa-whatsapp text-3xl"></i>
        <span class="hidden md:inline pr-2">Amankan Jadwalmu!</span>
    </a>
 
-   <!-- Simple JS for Navbar scroll effect -->
    <script>
        window.addEventListener('scroll', function() {
            const nav = document.querySelector('nav');
